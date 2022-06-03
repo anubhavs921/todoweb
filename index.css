@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+.upper-container{
+    width: 50%;
+    height: 10%;
+    margin: 50px auto;
+    position: relative;
+   
+}
+.upper-container1{
+    width: 35%;
+    height:100%;
+    padding-top: 20px;
+}
+#tasks{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#lists{
+    font-size: 40px;
+    margin-left: 10px;
+    opacity: 0.5;
+
+}
+#addlist{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    opacity: 0.5;
+    padding-top: 25px;
+}
+.upper-container2{
+    width: 30%;
+    height:100% ;
+    padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.card1{
+    margin-top: 10px;
+    border: 1.5px solid #e74c3c;
+    height: 45vh;
+    width: 15%;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 8px;
+    position: relative;
+    margin-right: 50px;
+   
+
+}
+.div1{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size: 25px;
+    width: 85%;
+    text-align: left;
+    height: 15%;
+    color:#e74c3c;
+    border-bottom: 1px solid black;
+}
+.div2{
+    width: 90%;
+    height: 10%;
+    font-size: 22px;
+    color:#ff0000;
+    text-align: right;
+    position: absolute;
+    top: 35%;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.div3{
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    font-size: 18px;
+
+}
+#check{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+.pop-up{
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    height: 30vh;
+    width: 27%;
+    border: 1.5px solid #e74c3c;
+    border-radius: 10px;
+    color: red;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px gray;
+    background-color: white;
+    padding: 20px;
+}
+.add-new{
+    opacity: 0.7;
+    font-size: 17px;
+
+}
+.pop-upbar{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 85%;
+    height: 25%;
+    border: 1.5px solid #ff0000;
+    box-shadow: 1px 1px 3px gray;
+}
+.pop-up-btn{
+    padding:10px 20px;
+    border: 0;
+    border-radius: 25px;
+    margin-top:18px;
+    color:white;
+    background-color: #e74c3c;
+    font-size: 18px;
+    position: absolute;
+    left: 130px;
+}
+/* .lower{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} */
+.notshow{
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+.tasklist-heading {
+    font-family:sans-serif;
+    margin:auto;
+    color: #342c2c;
+    text-align: center;
+    font-size: 50px;
+    max-width: 600px;
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .tasklist-heading:before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: rgb(151, 146, 146);
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .tasklist-heading:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: rgb(151, 146, 146);
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  i{
+      font-size: 40px;
+      color: #e74c3c;
+
+  }
+  .icon{
+      margin: 40px 0px;
+  }
+ #tasklist-text{
+     font-size: 40px;
+     margin-left: 15px;
+    color: #342c2c;
+    
+ }
+
+
+
+
+
+
+
+
+
+
+/* media queries start here */
+@media(max-width: 700px){
+    .upper-container{
+        width: 80%;
+
+    }
+    .upper-container1{
+        width: 80%;
+    }
+    #addlist{
+        display: none;
+    }
+    #circle{
+        right: 20px;
+
+    }
+    .div2{
+        display: none;
+
+    }
+    .div3{
+        display: none;
+
+    }
+    .div1{
+        border: none;
+        color:grey;
+    }
+    .card1{
+        width: 90%;
+        height: 23vw;
+        margin-top: 30px;
+    }
+
+    
+}
